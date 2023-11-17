@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-12
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=test-12
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: vrabbi/test-12
+    grafana/dashboard-selector: test-12
+    janus-idp.io/tekton: test-12
+spec:
+  type: service
+  system: demo-apps
+  lifecycle: experimental
+  owner: platform-team
